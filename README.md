@@ -1,5 +1,7 @@
 # Geographic satellite change detection
 
+[![Verify project](https://github.com/Alexkode/satellite-change/actions/workflows/verify.yml/badge.svg)](https://github.com/Alexkode/satellite-change/actions/workflows/verify.yml)
+
 Independent difference-threshold, early-fusion UNet and shared-encoder Siamese UNet baselines on the original OSCD satellite dataset. Predict urban change from two registered dates using four native 10m bands (blue, green, red, near infrared).
 
 ## Run
@@ -22,3 +24,18 @@ These small models are baselines, with 15 epochs and 12 random patches per city.
 Code was developed with AI assistance and is MIT licensed. The bundled original dataset README identifies the images as modified Copernicus Sentinel data from 2015–2018 and releases change labels under Creative Commons BY-NC-SA (without specifying a version). These terms are separate from the code license. They also apply to label-derived `results/example.png` and `results/*/example.npz`. Raw images and model weights are excluded. Retain attribution and consult the authors for commercial reuse of labels.
 
 Dataset and paper: [Daudt, Le Saux, Boulch and Gousseau (IGARSS 2018)](https://rcdaudt.github.io/oscd/), [author's reference code](https://github.com/rcdaudt/fully_convolutional_change_detection).
+
+## Installation and verification
+
+Clone this repository and run commands from its root. Each repository has its own dependencies and tests.
+
+```sh
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+bash scripts/verify.sh
+```
+
+GitHub Actions checks the code contracts and the consistency of published experimental records. It does not rerun training or cluster benchmarks. See [experiment provenance](ENVIRONMENT.md) and [measured report](results/REPORT.md).
+
+For Linux CPU-only PyTorch, install its CPU wheel before `requirements.txt`: `python -m pip install torch==2.9.0 --index-url https://download.pytorch.org/whl/cpu`.
