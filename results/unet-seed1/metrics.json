@@ -1,0 +1,217 @@
+{
+  "config": {
+    "model": "unet",
+    "seed": 1,
+    "epochs": 15,
+    "patches_per_city": 12,
+    "device": "cpu"
+  },
+  "torch": "2.14.1",
+  "seconds": 15.951338833023328,
+  "threshold": 0.30000000000000004,
+  "validation_macro_f1": 0.11277149303386942,
+  "test": {
+    "micro": {
+      "tp": 124108,
+      "fp": 1358070,
+      "fn": 34969,
+      "tn": 1549606,
+      "precision": 0.08373353267961069,
+      "recall": 0.7801756382129409,
+      "f1": 0.1512354874775705,
+      "iou": 0.0818035430976695,
+      "accuracy": 0.5457609399909286
+    },
+    "macro_city_f1": 0.1410469517492721,
+    "per_city": {
+      "brasilia": {
+        "tp": 3659,
+        "fp": 80937,
+        "fn": 1583,
+        "tn": 116898,
+        "precision": 0.04325263605844248,
+        "recall": 0.698016024418161,
+        "f1": 0.08145773503417263,
+        "iou": 0.04245813945392729,
+        "accuracy": 0.5936516690713375
+      },
+      "chongqing": {
+        "tp": 4755,
+        "fp": 31903,
+        "fn": 23882,
+        "tn": 336580,
+        "precision": 0.12971247749468057,
+        "recall": 0.1660439291825261,
+        "f1": 0.1456466804502642,
+        "iou": 0.07854311199207135,
+        "accuracy": 0.8595260878323933
+      },
+      "dubai": {
+        "tp": 48689,
+        "fp": 433647,
+        "fn": 0,
+        "tn": 8380,
+        "precision": 0.1009441551117893,
+        "recall": 1.0,
+        "f1": 0.183377430441128,
+        "iou": 0.1009441551117893,
+        "accuracy": 0.11629741031472379
+      },
+      "lasvegas": {
+        "tp": 45146,
+        "fp": 541533,
+        "fn": 124,
+        "tn": 3181,
+        "precision": 0.0769517913543863,
+        "recall": 0.9972608791694278,
+        "f1": 0.14287861836952032,
+        "iou": 0.07693553032278294,
+        "accuracy": 0.08191239084449747
+      },
+      "milano": {
+        "tp": 715,
+        "fp": 23886,
+        "fn": 1704,
+        "tn": 277805,
+        "precision": 0.029063859192715744,
+        "recall": 0.29557668458040515,
+        "f1": 0.05292376017764619,
+        "iou": 0.027181144269150352,
+        "accuracy": 0.915852816415113
+      },
+      "montpellier": {
+        "tp": 10883,
+        "fp": 39906,
+        "fn": 2171,
+        "tn": 139166,
+        "precision": 0.21427868239185652,
+        "recall": 0.833690822736326,
+        "f1": 0.3409300941371803,
+        "iou": 0.20549471299093655,
+        "accuracy": 0.7809926818858457
+      },
+      "norcia": {
+        "tp": 658,
+        "fp": 9284,
+        "fn": 569,
+        "tn": 82274,
+        "precision": 0.06618386642526655,
+        "recall": 0.5362673186634067,
+        "f1": 0.11782612588414361,
+        "iou": 0.06260108457806107,
+        "accuracy": 0.8938082664223743
+      },
+      "rio": {
+        "tp": 6038,
+        "fp": 43552,
+        "fn": 2514,
+        "tn": 98274,
+        "precision": 0.121758419036096,
+        "recall": 0.7060336763330215,
+        "f1": 0.20769839358811187,
+        "iou": 0.11588361738062337,
+        "accuracy": 0.6936652967854341
+      },
+      "saclay_w": {
+        "tp": 2736,
+        "fp": 36457,
+        "fn": 2282,
+        "tn": 386974,
+        "precision": 0.06980838415023091,
+        "recall": 0.5452371462734157,
+        "f1": 0.1237701024631879,
+        "iou": 0.06596745027124774,
+        "accuracy": 0.9095831709258279
+      },
+      "valencia": {
+        "tp": 829,
+        "fp": 116965,
+        "fn": 140,
+        "tn": 100074,
+        "precision": 0.007037709900334482,
+        "recall": 0.8555211558307534,
+        "f1": 0.013960576947365763,
+        "iou": 0.007029355402174097,
+        "accuracy": 0.46284081318116765
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_weighted_bce": 0.915543015797933,
+      "validation_bce": 0.4977436065673828
+    },
+    {
+      "epoch": 2,
+      "train_weighted_bce": 0.8874324321746826,
+      "validation_bce": 0.3154561519622803
+    },
+    {
+      "epoch": 3,
+      "train_weighted_bce": 0.9021063109238943,
+      "validation_bce": 0.455508828163147
+    },
+    {
+      "epoch": 4,
+      "train_weighted_bce": 0.880416214466095,
+      "validation_bce": 0.38947805762290955
+    },
+    {
+      "epoch": 5,
+      "train_weighted_bce": 0.8757984975973765,
+      "validation_bce": 0.37796512246131897
+    },
+    {
+      "epoch": 6,
+      "train_weighted_bce": 0.8714502036571503,
+      "validation_bce": 0.3710235357284546
+    },
+    {
+      "epoch": 7,
+      "train_weighted_bce": 0.8762465357780457,
+      "validation_bce": 0.397308349609375
+    },
+    {
+      "epoch": 8,
+      "train_weighted_bce": 0.8744619150956472,
+      "validation_bce": 0.3857961595058441
+    },
+    {
+      "epoch": 9,
+      "train_weighted_bce": 0.8688137670358022,
+      "validation_bce": 0.3573916256427765
+    },
+    {
+      "epoch": 10,
+      "train_weighted_bce": 0.8583000481128693,
+      "validation_bce": 0.35904428362846375
+    },
+    {
+      "epoch": 11,
+      "train_weighted_bce": 0.8538946131865184,
+      "validation_bce": 0.32039979100227356
+    },
+    {
+      "epoch": 12,
+      "train_weighted_bce": 0.8455274979273478,
+      "validation_bce": 0.35658183693885803
+    },
+    {
+      "epoch": 13,
+      "train_weighted_bce": 0.8451434175173441,
+      "validation_bce": 0.31039056181907654
+    },
+    {
+      "epoch": 14,
+      "train_weighted_bce": 0.8270138839880625,
+      "validation_bce": 0.24247105419635773
+    },
+    {
+      "epoch": 15,
+      "train_weighted_bce": 0.8380813697973887,
+      "validation_bce": 0.4105055332183838
+    }
+  ],
+  "method": "All official test cities held out. Saclay east excluded because west is test. Last 3 eligible training cities form validation. All 10m image pixels evaluated by nonoverlapping tiles; no random pixel split."
+}

@@ -1,0 +1,234 @@
+{
+  "train": [
+    "abudhabi",
+    "aguasclaras",
+    "beihai",
+    "beirut",
+    "bercy",
+    "bordeaux",
+    "cupertino",
+    "hongkong",
+    "mumbai",
+    "nantes"
+  ],
+  "validation": [
+    "paris",
+    "pisa",
+    "rennes"
+  ],
+  "test": [
+    "brasilia",
+    "chongqing",
+    "dubai",
+    "lasvegas",
+    "milano",
+    "montpellier",
+    "norcia",
+    "rio",
+    "saclay_w",
+    "valencia"
+  ],
+  "excluded": [
+    "saclay_e"
+  ],
+  "bands": [
+    "B02",
+    "B03",
+    "B04",
+    "B08"
+  ],
+  "reflectance_divisor": 10000,
+  "archives": [
+    {
+      "archive": "images.zip",
+      "url": "https://partage.imt.fr/index.php/s/gKRaWgRnLMfwMGo/download",
+      "sha256": "940b87887511058a933e67cd6d0e43e2eb825a55d8e79a50983dee7f23003656",
+      "bytes": 512716711,
+      "md5_verified": "c50d4a2941da64e03a47ac4dec63d915"
+    },
+    {
+      "archive": "train-labels.zip",
+      "url": "https://partage.imt.fr/index.php/s/2D6n03k58ygBSpu/download",
+      "sha256": "89fb54cd12ad0dbea6c447528139dec305b865294215434bf6dd170fb8fd3ca5",
+      "bytes": 137873,
+      "md5_verified": "4d2965af8170c705ebad3d6ee71b6990"
+    },
+    {
+      "archive": "test-labels.zip",
+      "url": "https://partage.imt.fr/index.php/s/gpStKn4Mpgfnr63/download",
+      "sha256": "2e195eaa1b788b99fa93ea8073e3780bc0b763000b0c49dbf70548acf1e5d67d",
+      "bytes": 83614,
+      "md5_verified": "8177d437793c522653c442aa4e66c617"
+    }
+  ],
+  "cities": {
+    "abudhabi": {
+      "shape": [
+        795,
+        782
+      ],
+      "change_fraction": 0.037135871575865786
+    },
+    "aguasclaras": {
+      "shape": [
+        471,
+        525
+      ],
+      "change_fraction": 0.018659387321807705
+    },
+    "beihai": {
+      "shape": [
+        902,
+        772
+      ],
+      "change_fraction": 0.024869891892512895
+    },
+    "beirut": {
+      "shape": [
+        1180,
+        1070
+      ],
+      "change_fraction": 0.026863614763187074
+    },
+    "bercy": {
+      "shape": [
+        395,
+        360
+      ],
+      "change_fraction": 0.007355836849507736
+    },
+    "bordeaux": {
+      "shape": [
+        517,
+        461
+      ],
+      "change_fraction": 0.009985860357393104
+    },
+    "cupertino": {
+      "shape": [
+        1015,
+        788
+      ],
+      "change_fraction": 0.0236828286364432
+    },
+    "hongkong": {
+      "shape": [
+        693,
+        538
+      ],
+      "change_fraction": 0.03572367327014167
+    },
+    "mumbai": {
+      "shape": [
+        858,
+        557
+      ],
+      "change_fraction": 0.025620101024050754
+    },
+    "nantes": {
+      "shape": [
+        522,
+        582
+      ],
+      "change_fraction": 0.011352714249976959
+    },
+    "paris": {
+      "shape": [
+        408,
+        390
+      ],
+      "change_fraction": 0.0028783308195072903
+    },
+    "pisa": {
+      "shape": [
+        776,
+        718
+      ],
+      "change_fraction": 0.016386439996554
+    },
+    "rennes": {
+      "shape": [
+        339,
+        563
+      ],
+      "change_fraction": 0.025841336707587356
+    },
+    "saclay_e": {
+      "shape": [
+        631,
+        679
+      ],
+      "change_fraction": 0.009928836337580436
+    },
+    "brasilia": {
+      "shape": [
+        433,
+        469
+      ],
+      "change_fraction": 0.02581286901027689
+    },
+    "chongqing": {
+      "shape": [
+        730,
+        544
+      ],
+      "change_fraction": 0.0721117042707494
+    },
+    "dubai": {
+      "shape": [
+        774,
+        634
+      ],
+      "change_fraction": 0.09922032295665925
+    },
+    "lasvegas": {
+      "shape": [
+        824,
+        716
+      ],
+      "change_fraction": 0.07673089439713619
+    },
+    "milano": {
+      "shape": [
+        545,
+        558
+      ],
+      "change_fraction": 0.007954358620236099
+    },
+    "montpellier": {
+      "shape": [
+        426,
+        451
+      ],
+      "change_fraction": 0.06794499443073816
+    },
+    "norcia": {
+      "shape": [
+        241,
+        385
+      ],
+      "change_fraction": 0.013224120278062187
+    },
+    "rio": {
+      "shape": [
+        353,
+        426
+      ],
+      "change_fraction": 0.05687002088071393
+    },
+    "saclay_w": {
+      "shape": [
+        631,
+        679
+      ],
+      "change_fraction": 0.011712012398208422
+    },
+    "valencia": {
+      "shape": [
+        458,
+        476
+      ],
+      "change_fraction": 0.004444791016843418
+    }
+  }
+}

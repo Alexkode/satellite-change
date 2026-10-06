@@ -1,0 +1,92 @@
+{
+  "split": {
+    "train": [
+      "abudhabi",
+      "aguasclaras",
+      "beihai",
+      "beirut",
+      "bercy",
+      "bordeaux",
+      "cupertino",
+      "hongkong",
+      "mumbai",
+      "nantes"
+    ],
+    "validation": [
+      "paris",
+      "pisa",
+      "rennes"
+    ],
+    "test": [
+      "brasilia",
+      "chongqing",
+      "dubai",
+      "lasvegas",
+      "milano",
+      "montpellier",
+      "norcia",
+      "rio",
+      "saclay_w",
+      "valencia"
+    ]
+  },
+  "models": {
+    "difference": {
+      "f1": {
+        "mean": 0.2793951023740401,
+        "std_across_seeds": 0.0
+      },
+      "iou": {
+        "mean": 0.16238190578182196,
+        "std_across_seeds": 0.0
+      },
+      "precision": {
+        "mean": 0.20055206105532386,
+        "std_across_seeds": 0.0
+      },
+      "recall": {
+        "mean": 0.4603871081300251,
+        "std_across_seeds": 0.0
+      },
+      "macro_city_f1": 0.26047886387026364
+    },
+    "unet": {
+      "f1": {
+        "mean": 0.13897415641253494,
+        "std_across_seeds": 0.010831120049546172
+      },
+      "iou": {
+        "mean": 0.0747124533413773,
+        "std_across_seeds": 0.006245946634534154
+      },
+      "precision": {
+        "mean": 0.07636719154225512,
+        "std_across_seeds": 0.006638863559949502
+      },
+      "recall": {
+        "mean": 0.7799053288658951,
+        "std_across_seeds": 0.027037241187004315
+      },
+      "macro_city_f1": 0.12109592902586315
+    },
+    "siamese": {
+      "f1": {
+        "mean": 0.27083754467728294,
+        "std_across_seeds": 0.09366890355070348
+      },
+      "iou": {
+        "mean": 0.15995642662100443,
+        "std_across_seeds": 0.06144834289425011
+      },
+      "precision": {
+        "mean": 0.17271214932881462,
+        "std_across_seeds": 0.07025335941155852
+      },
+      "recall": {
+        "mean": 0.7162275711343145,
+        "std_across_seeds": 0.03595207776121595
+      },
+      "macro_city_f1": 0.2518633201006533
+    }
+  }
+}
