@@ -213,5 +213,7 @@
       "validation_bce": 0.1915060132741928
     }
   ],
-  "method": "All official test cities held out. Saclay east excluded because west is test. Last 3 eligible training cities form validation. All 10m image pixels evaluated by nonoverlapping tiles; no random pixel split."
+  "method": "All official test cities held out. Saclay east excluded because west is test. Last 3 eligible training cities form validation. Every pixel in the common native image/label extent is evaluated by nonoverlapping tiles; no random pixel split. Unsupported outer borders are excluded as recorded in the manifest.",
+  "evaluated_test_pixels": 3066753,
+  "excluded_test_border_pixels": 11183
 }

@@ -67,7 +67,7 @@ def main():
         model.load_state_dict(best_state);vs={c:infer(model,xx,device=a.device) for c,(xx,yy) in val.items()};best,threshold=select(vs,val,np.linspace(.1,.9,17))
         ts={c:infer(model,xx,device=a.device) for c,(xx,yy) in test.items()};torch.save({'state':best_state,'model':a.model},output/'checkpoint.pt')
     result={'config':vars(a),'torch':torch.__version__,'seconds':time.perf_counter()-start,'threshold':threshold,'validation_macro_f1':best,
-            'test':evaluate(ts,test,threshold),'history':history,'method':'All official test cities held out. Saclay east excluded because west is test. Last 3 eligible training cities form validation. All 10m image pixels evaluated by nonoverlapping tiles; no random pixel split.'}
+            'test':evaluate(ts,test,threshold),'history':history,'method':'All official test cities held out. Saclay east excluded because west is test. Last 3 eligible training cities form validation. Every pixel in the common native image/label extent is evaluated by nonoverlapping tiles; no random pixel split. Unsupported outer borders are excluded, as recorded in the manifest.'}
     (output/'metrics.json').write_text(json.dumps(result,indent=2)+'\n')
     city=sorted(ts)[0];np.savez_compressed(output/'example.npz',score=ts[city],truth=test[city][1],before=test[city][0][[2,1,0]],after=test[city][0][[6,5,4]],city=city)
     print(json.dumps({'model':a.model,'seed':a.seed,'threshold':threshold,'test':result['test']['micro'],'macro':result['test']['macro_city_f1']}))

@@ -38,6 +38,11 @@
     "B08"
   ],
   "reflectance_divisor": 10000,
+  "rectified_comparison": {
+    "cities_checked": 24,
+    "different_fields": 0,
+    "extent": "common native image and label overlap"
+  },
   "archives": [
     {
       "archive": "images.zip",
@@ -67,168 +72,384 @@
         795,
         782
       ],
-      "change_fraction": 0.037135871575865786
+      "change_fraction": 0.037135871575865786,
+      "label_shape": [
+        799,
+        785
+      ],
+      "evaluated_shape": [
+        795,
+        782
+      ],
+      "excluded_border_pixels": 5525
     },
     "aguasclaras": {
       "shape": [
         471,
         525
       ],
-      "change_fraction": 0.018659387321807705
+      "change_fraction": 0.018659387321807705,
+      "label_shape": [
+        471,
+        525
+      ],
+      "evaluated_shape": [
+        471,
+        525
+      ],
+      "excluded_border_pixels": 0
     },
     "beihai": {
       "shape": [
         902,
         772
       ],
-      "change_fraction": 0.024869891892512895
+      "change_fraction": 0.024869891892512895,
+      "label_shape": [
+        902,
+        772
+      ],
+      "evaluated_shape": [
+        902,
+        772
+      ],
+      "excluded_border_pixels": 0
     },
     "beirut": {
       "shape": [
         1180,
         1070
       ],
-      "change_fraction": 0.026863614763187074
+      "change_fraction": 0.026863614763187074,
+      "label_shape": [
+        1180,
+        1070
+      ],
+      "evaluated_shape": [
+        1180,
+        1070
+      ],
+      "excluded_border_pixels": 0
     },
     "bercy": {
       "shape": [
         395,
         360
       ],
-      "change_fraction": 0.007355836849507736
+      "change_fraction": 0.007355836849507736,
+      "label_shape": [
+        395,
+        360
+      ],
+      "evaluated_shape": [
+        395,
+        360
+      ],
+      "excluded_border_pixels": 0
     },
     "bordeaux": {
       "shape": [
         517,
         461
       ],
-      "change_fraction": 0.009985860357393104
+      "change_fraction": 0.009985860357393104,
+      "label_shape": [
+        517,
+        461
+      ],
+      "evaluated_shape": [
+        517,
+        461
+      ],
+      "excluded_border_pixels": 0
     },
     "cupertino": {
       "shape": [
         1015,
         788
       ],
-      "change_fraction": 0.0236828286364432
+      "change_fraction": 0.0236828286364432,
+      "label_shape": [
+        1015,
+        788
+      ],
+      "evaluated_shape": [
+        1015,
+        788
+      ],
+      "excluded_border_pixels": 0
     },
     "hongkong": {
       "shape": [
         693,
         538
       ],
-      "change_fraction": 0.03572367327014167
+      "change_fraction": 0.03572367327014167,
+      "label_shape": [
+        695,
+        540
+      ],
+      "evaluated_shape": [
+        693,
+        538
+      ],
+      "excluded_border_pixels": 2466
     },
     "mumbai": {
       "shape": [
         858,
         557
       ],
-      "change_fraction": 0.025620101024050754
+      "change_fraction": 0.025620101024050754,
+      "label_shape": [
+        858,
+        557
+      ],
+      "evaluated_shape": [
+        858,
+        557
+      ],
+      "excluded_border_pixels": 0
     },
     "nantes": {
       "shape": [
         522,
         582
       ],
-      "change_fraction": 0.011352714249976959
+      "change_fraction": 0.011352714249976959,
+      "label_shape": [
+        522,
+        582
+      ],
+      "evaluated_shape": [
+        522,
+        582
+      ],
+      "excluded_border_pixels": 0
     },
     "paris": {
       "shape": [
         408,
         390
       ],
-      "change_fraction": 0.0028783308195072903
+      "change_fraction": 0.0028783308195072903,
+      "label_shape": [
+        408,
+        390
+      ],
+      "evaluated_shape": [
+        408,
+        390
+      ],
+      "excluded_border_pixels": 0
     },
     "pisa": {
       "shape": [
         776,
         718
       ],
-      "change_fraction": 0.016386439996554
+      "change_fraction": 0.016386439996554,
+      "label_shape": [
+        776,
+        718
+      ],
+      "evaluated_shape": [
+        776,
+        718
+      ],
+      "excluded_border_pixels": 0
     },
     "rennes": {
       "shape": [
         339,
         563
       ],
-      "change_fraction": 0.025841336707587356
+      "change_fraction": 0.025841336707587356,
+      "label_shape": [
+        339,
+        563
+      ],
+      "evaluated_shape": [
+        339,
+        563
+      ],
+      "excluded_border_pixels": 0
     },
     "saclay_e": {
       "shape": [
         631,
         679
       ],
-      "change_fraction": 0.009928836337580436
+      "change_fraction": 0.009928836337580436,
+      "label_shape": [
+        639,
+        688
+      ],
+      "evaluated_shape": [
+        631,
+        679
+      ],
+      "excluded_border_pixels": 11183
     },
     "brasilia": {
       "shape": [
         433,
         469
       ],
-      "change_fraction": 0.02581286901027689
+      "change_fraction": 0.02581286901027689,
+      "label_shape": [
+        433,
+        469
+      ],
+      "evaluated_shape": [
+        433,
+        469
+      ],
+      "excluded_border_pixels": 0
     },
     "chongqing": {
       "shape": [
         730,
         544
       ],
-      "change_fraction": 0.0721117042707494
+      "change_fraction": 0.0721117042707494,
+      "label_shape": [
+        730,
+        544
+      ],
+      "evaluated_shape": [
+        730,
+        544
+      ],
+      "excluded_border_pixels": 0
     },
     "dubai": {
       "shape": [
         774,
         634
       ],
-      "change_fraction": 0.09922032295665925
+      "change_fraction": 0.09922032295665925,
+      "label_shape": [
+        774,
+        634
+      ],
+      "evaluated_shape": [
+        774,
+        634
+      ],
+      "excluded_border_pixels": 0
     },
     "lasvegas": {
       "shape": [
         824,
         716
       ],
-      "change_fraction": 0.07673089439713619
+      "change_fraction": 0.07673089439713619,
+      "label_shape": [
+        824,
+        716
+      ],
+      "evaluated_shape": [
+        824,
+        716
+      ],
+      "excluded_border_pixels": 0
     },
     "milano": {
       "shape": [
         545,
         558
       ],
-      "change_fraction": 0.007954358620236099
+      "change_fraction": 0.007954358620236099,
+      "label_shape": [
+        545,
+        558
+      ],
+      "evaluated_shape": [
+        545,
+        558
+      ],
+      "excluded_border_pixels": 0
     },
     "montpellier": {
       "shape": [
         426,
         451
       ],
-      "change_fraction": 0.06794499443073816
+      "change_fraction": 0.06794499443073816,
+      "label_shape": [
+        426,
+        451
+      ],
+      "evaluated_shape": [
+        426,
+        451
+      ],
+      "excluded_border_pixels": 0
     },
     "norcia": {
       "shape": [
         241,
         385
       ],
-      "change_fraction": 0.013224120278062187
+      "change_fraction": 0.013224120278062187,
+      "label_shape": [
+        241,
+        385
+      ],
+      "evaluated_shape": [
+        241,
+        385
+      ],
+      "excluded_border_pixels": 0
     },
     "rio": {
       "shape": [
         353,
         426
       ],
-      "change_fraction": 0.05687002088071393
+      "change_fraction": 0.05687002088071393,
+      "label_shape": [
+        353,
+        426
+      ],
+      "evaluated_shape": [
+        353,
+        426
+      ],
+      "excluded_border_pixels": 0
     },
     "saclay_w": {
       "shape": [
         631,
         679
       ],
-      "change_fraction": 0.011712012398208422
+      "change_fraction": 0.011712012398208422,
+      "label_shape": [
+        639,
+        688
+      ],
+      "evaluated_shape": [
+        631,
+        679
+      ],
+      "excluded_border_pixels": 11183
     },
     "valencia": {
       "shape": [
         458,
         476
       ],
-      "change_fraction": 0.004444791016843418
+      "change_fraction": 0.004444791016843418,
+      "label_shape": [
+        458,
+        476
+      ],
+      "evaluated_shape": [
+        458,
+        476
+      ],
+      "excluded_border_pixels": 0
     }
   }
 }

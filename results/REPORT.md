@@ -10,7 +10,7 @@ Official OSCD: 10 training cities, 3 validation cities, 10 held-out test cities.
 
 Lowest F1 cities for Siamese seed 0: valencia (0.011), norcia (0.048), saclay_w (0.052).
 
-The threshold and epoch are chosen on validation cities only. Every pixel of the test cities is evaluated. Random crops never cross split boundaries. Model seed variability and per-city scores expose geographic generalization limits.
+The threshold and epoch are chosen on validation cities only. Every pixel in the common native image/label extent of each test city is evaluated. Unsupported outer borders exclude 11,183 labeled pixels; per-city extents are retained in the manifest. Random crops never cross split boundaries. Model seed variability and per-city scores expose geographic generalization limits.
 
 These are small independent baseline implementations, not reproductions of published benchmark training. Nonoverlapping inference tiles can create seams; four-band inputs omit nine available channels. Limited patches and epochs constrain the results.
 
